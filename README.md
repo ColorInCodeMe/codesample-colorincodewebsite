@@ -1,8 +1,20 @@
 # Getting Started 🚀
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- Welcome to this code sample page. This is a reproduction repository featuring samples of code directly written or refactored. 
+- Some elements of the page and project have been removed to protect client/project information. This is a code sample reference only and not for reproduction or production. 
+# About This project
+- This is/will be the site for color in code. It is still in production. You can navigate through some of the pages. 
+# About the code
+- Uses TS/SCSS/html
+- includes a few libraries for different purposes: gsap, reveal, jquery, splideJS, possibly animeJS / pixiJS
+- Intended to work cross browser and responsively
 
-## Prerequisites 📋
+# Unique challenges
+- Doing my own website is different than others as I like to experiment with where I can take the code - so this sample page reflects that experimentation process with some things that won't be used, and some will. Primarily I like to stick with vanilla JS using typescript where possible, and has a few different libraries which I have enjoyed experimenting with lately. The build is something I have built from the ground up using my own parcelJS (swc on rust) boilerplate. I use SCSS/TS to separate modules and concerns, and generally prefer native functionality where possible.
+
+
+## Replication 📋
 You'll need Git and Node.js (which comes with NPM) installed on your computer. Sometimes this can require visual studio dev tools or a similar C++ object oriented environment to your machine, if not already present. 
+
 
 
 ~~node\@LTS or higher~~ `May want to use nvm to control node versions` <br />
@@ -27,7 +39,6 @@ clone the repo locally, and develop on a machine. Store your dist/prod output on
 ## Installation - boilerplate 1.0.2
 
 ### Clone the repository
-[colorincode-starter-bp](https://github.com/colorincode/colorincode-starter-bp.git)
 
 run (using npm and yarn): 
 

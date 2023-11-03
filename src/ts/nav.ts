@@ -4,8 +4,7 @@ import * as jquery from 'jquery';
 (window as any).$ = (window as any).jQuery = jquery;
 console.log('imports loaded');
 
-// import './animationsmodule.ts';
-// import {parse} from '../assets/fontawesome-pro-6.4.2/js/all.js' ;
+
 //dom loaded 
 navigationToggle();
 checkforAnimation();

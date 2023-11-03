@@ -93,7 +93,6 @@ class ScrollComponent {
     }
   
     updatePercentage(): void {
-      // Add your callback logic here
       // Example: const percent = document.getElementById('percent');
       // percent.innerHTML = (tl.progress() * 100).toFixed();
       // console.log(tl.progress());

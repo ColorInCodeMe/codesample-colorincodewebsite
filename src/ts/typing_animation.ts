@@ -132,19 +132,3 @@ export default class TypingAnimation {
     }
 }
 
-// import Typewriter from "./Typewriter"
-
-// const typewriter = new Typewriter(document.querySelector(".typing--boi--passive") as HTMLDivElement, {
-//     loop: true,
-//     typingSpeed: 100,
-//     deletingSpeed: 100,
-// })
-
-// typewriter
-//     .typeString("first string")
-//     .newLine()
-//     .tabIndent()
-//     .pauseFor(1000)
-//     .deleteChars(12) // auto place the value of the prev string here somehow
-//     .deleteAll(21)
-//     .start()

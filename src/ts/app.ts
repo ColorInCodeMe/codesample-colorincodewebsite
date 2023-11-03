@@ -9,8 +9,6 @@ import './nav.ts';
 import { createWidget } from '@typeform/embed'
 import '@typeform/embed/build/css/widget.css'
 
-
-
 function realFullScreen() {
   let elements = document.querySelectorAll('#realFullscreen') as NodeListOf<HTMLElement>;
   let vw = document.documentElement.clientWidth;
@@ -21,13 +19,6 @@ function realFullScreen() {
   elements.forEach(el => {
     el.style.width = vw + "px";
     el.style.height = vh + "px";
-    // if (vw < 768) {
-    //   el.style.margin = "4vh 4vh 4vh 0";
-    // } else if (vw > 768)  {
-    //   el.style.margin = "4vh 4vh 4vh 0";
-    // } else {
-    //   console.log('something wong');
-    // }
   });
 };
 window.addEventListener('resize', (event: UIEvent) => {
@@ -61,59 +52,6 @@ window.addEventListener('resize', (event: UIEvent) => {
 });
 realVH();
 
-
-
-// typeform();
-
-// function typeform() {
-// createWidget('A4HHlRfK', { 
-//   container: document.querySelector('#form') as any,
-//  autoResize: true,
-//  disableScroll: true,
-
-// })
-// }
-
-// function typeformiframe() {
-//   let id = 'formWrapper';
-//   let height = containerELForm(id);
-//   // let maxHeight = 590;
-// const { refresh } = createWidget('A4HHlRfK', {
-//   container: document.querySelector('#promotypeform')!,
-//   // disableScroll: true,
-//   // autoResize: true,
-//   height: height,
-// })
-// if (height! >= maxHeight) {
-//   refresh;
-// } 
-// };
-// function containerELForm(id: string): number | undefined{
-//   let container = document.getElementById(id);
-//   let rect = container?.getBoundingClientRect();
-//   let height = rect?.height;
-//   return height;
-// };
-// window.addEventListener('resize', (event: UIEvent) => {
-//   let id = 'formWrapper';
-//   // onTypeformHeightChanged(jquery.data);
-//   let height = containerELForm(id);
-//   function onTypeformHeightChanged(data: any) {
-//     // alert(`onHeightChanged: ${data.height}px`)
-//     const { refresh } = createWidget('A4HHlRfK', {
-//       container: document.querySelector('#promotypeform')!,
-//       disableScroll: true,
-//       // inlineOnMobile: true,
-//       autoResize: true,
-//       height: height,
-//     })
-//     console.log('form height changed', data)
-//    }
-//    onTypeformHeightChanged(true);
-// }), false;
-
-// typeformiframe();
-// global vars
 let csAwaitDelay = 500;
 let csAwaitDelayL = 1000;
 
@@ -430,16 +368,10 @@ function footerYear() {
 document.addEventListener('DOMContentLoaded', () => {
 
 // Get all elements with the data-pagename attribute
-// const pageElements = document.querySelectorAll('[data-pagename]') as NodeListOf<HTMLElement>;
-// const linkElements = document.querySelectorAll('[data-pagename]') as NodeListOf<HTMLElement>;
-// const pageAndLinkElements = document.querySelectorAll('[data-pagename], [data-linkname]') as NodeListOf<HTMLElement>;
-
-// Get all elements with the data-pagename attribute
 const elements = document.querySelectorAll('[data-pagename]') as NodeListOf<HTMLElement>;
 const linkElements = document.querySelectorAll('[data-linkname]') as NodeListOf<HTMLElement>;
 // Loop through each element and generate the template literals
 elements.forEach((element, index) => {
-  // Get the current attribute value
 let currentPagenames = element.dataset.pagename;
   const currentLinknames = element.dataset.linkname;
   
@@ -448,13 +380,8 @@ let currentPagenames = element.dataset.pagename;
   }
 
   const currentLinkname = convertLinks(currentLinknames);
-  // Generate the template literal with the modified value
   const template = `<li  data-pagename="${currentPagenames}"><a href="${currentLinkname}.html" target="_blank" data-linkname="${currentLinkname}"><span class="global__headerwrapper--text">${currentPagenames}</span></a></li>`;
-  
-  // Insert the template literal before the current element
   element.insertAdjacentHTML('beforebegin', template);
-  
-  // Remove the current element
   element.remove();
 });
 //   function convertPageNames(string: any) {
@@ -477,52 +404,4 @@ let currentPagenames = element.dataset.pagename;
 //   // Remove the current element
 //   element.remove();
 
-
-// Loop through each element and generate the template literals
-// pageAndLinkElements .forEach((element, index) => {
-//     // Get the current attribute value
-//     const currentPagename = element.dataset.pagename;
-//     // function convertPageNames(string: any) {
-//     //     document.querySelector("[data-pagename]")!.textContent = currentLinkName;
-//     //     return string.toLowerCase();
-//     //   }
-//     //   const currentPagename = convertPageNames(currentPagenames);
-
-    
-//     const currentLinknames = element.dataset.linkname;
-//     function convertLinks(string: any) {
-//       return string.toLowerCase();
-//     }
-//     const currentLinkName = convertLinks(currentLinknames);
-
-
-//     // Generate the template literal with the modified value
-//     const template = `<li><a href="${currentLinkName}.html" target="_blank" data-linkname=""><span class="global__headerwrapper--text" data-pagename="">${currentPagename}</span></a></li>`;
-//     console.log(template);
-//     // Insert the template literal before the current element
-//     element.insertAdjacentHTML('beforebegin', template);
-//     // Remove the current element
-//     element.remove();
-  
-  
-//   });
-
 });
-
-
-//other imports etc
-
-// pixi and deps
-// import * as PIXI from "pixi";
-// import '@pixi/graphics-extras';
-// import { KawaseBlurFilter } from "@pixi/filter-kawase-blur";
-// custom builds
-// import slide from './slide';
-// import './utils.ts';
-// import './barba.ts';
-
-// import './pagetransitions.ts';
-
-// import "../assets/fontawesome-pro-6.4.2/js/all.js";
-// import './pixistage.ts';
-// import './once-anime.ts';import { init } from './@splidejs/test/utils/utils';

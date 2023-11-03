@@ -1,0 +1,3 @@
+// this is to load the imports from fontawesome module 
+// import your fontawesome calls into font.module.scss so parcel knows they are partials and dont supercede our locals
+@use './fonts.module.scss' as *;

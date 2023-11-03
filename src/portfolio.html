@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta data and structure -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Color In Code is a Graphic Design and Web Development Company. We specialize in WordPress, E-Commerce, Web Applications, SEO &amp; Hosting Services." />
+    <meta property="og:url" content="http://colorincode.me" />
+    <meta property="og:site_name" content="Color In Code | Web Development and Graphic Design" />
+
+    <meta name="geo.placename" content="Albuquerque" />
+    <meta name="geo.position" content="35.12989918846678, -106.3656390963496" />
+    <meta name="geo.region" content="United States (US)" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Color in Code main portfolio page featuring projects past and present.">
+    <meta property="og:image" content="https://colorincode.me/assets/hexagon-background-dark.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:type" content="image/jpg" />
+
+    <title> Portfolio | Color In Code </title>
+    <meta property="og:title" content="Color In Code pricing: portfolio" />
+    <!-- sitewide font calls-->
+    <link rel="stylesheet" href="./scss/fonts.scss">
+    <link rel="stylesheet" href="https://use.typekit.net/vyz7xic.css">
+    <link rel="stylesheet" href="./scss/portfoliostyles/colorincoderevealtheme.scss">
+    <!-- child stylesheet for the page-->
+    <link rel="stylesheet" href="./scss/portfoliostyles/portfoliomain.scss" />
+    <link rel="stylesheet" href="./scss/portfoliostyles/portfoliogrid.scss" />
+    <!--main stylesheet call-->
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <!-- main JS call, JS here will bubble make sure if superceding JS exists it goes at bottom -->
+   
+    <script type="module" src="./ts/portfoliopages.ts"></script>
+</head>
+
+<body>
+    <!--begin site nav-->
+    <section class="navigation">
+        <div class="toggle-wrapper">
+            <span class="show"><i class="fa-regular fa-bars"></i>
+        <ul>
+          <li>  <i class="fa-regular fa-house-chimney"></i></li>
+          <li> <i class="fa-light fa-address-card"></i></li>
+          <li> <i class="fa-regular fa-square-dollar"></i></li>
+          <li> <i class="fa-light fa-folder-user"></i></li>
+        </ul>
+        </span>
+
+            <span class="hide"><i class="fa-light fa-caret-left "></i></span>
+        </div>
+        <nav class="sidenav__desktop">
+            <ul class="sidenav__text menu">
+                <li>
+                    <a href="index.html" target="_blank">
+                        <i class="fa-duotone fa-code"></i>
+                        <span class="logo__text link__text overlay__btn--colors overlay__btn ">color in code</span></a>
+                </li>
+                
+                <li><a href="index.html" class="active__nav" target="_blank"><i class="fa-regular fa-house-chimney fa-fw"></i><span class="link__text">HOME</span></a></li>
+                <li><a href="about.html" target="_blank"><i class="fa-light fa-address-card fa-fw"></i><span class="link__text">ABOUT</span></a></li>
+                <li><a href="pricing.html" target="_blank"><i class="fa-regular fa-square-dollar fa-fw"></i><span class="link__text">PRICING</span></a></li>
+                <li class="sldm-submenu"><a href="portfolio.html"><i class="fa-light fa-folder-user fa-fw"></i><span class="link__text">PORTFOLIO</span> <i class=" fa-light fa-angle-down sldm-widget-toggle" ></i></a>
+                   
+                        <ul class="sldm-default fa-ul" style="display: none;">
+                            <li class="sublink__listitem">
+                                <a href="./portfolio.html"> 
+                                    <span class="fa-li"><i class="fa-thin fa-square-terminal fa-sm fa-fw"></i></span>
+                                    <span class="sublink__text">Portfolio Home</span>
+                                </a>
+                            </li>
+                            <li class="sublink__listitem">
+                                <a href="./code-samples.html"> 
+                                    <span class="fa-li"><i class="fa-thin fa-laptop-code fa-sm fa-fw"></i></span>
+                                    <span class="sublink__text">Code Samples</span>
+                                </a>
+                            </li>
+                            <li class="sublink__listitem">
+                                <a href="#" target="_blank">
+                                    <span class="fa-li"><i class="fa-duotone fa-envelope fa-sm fa-fw"></i></span>
+                                    <span class="sublink__text">Email Samples</span>
+                                </a>
+                            </li>
+                            <li class="sublink__listitem">
+                                <a href="#">
+                                    <span class="fa-li"><i class="fa-duotone fa-alien-8bit fa-sm fa-fw"></i></span>
+                                    <span class="sublink__text">AI Experiment Lab</span>
+                                </a>
+                            </li>
+                        </ul>
+                
+                
+                </li>
+
+                <li><a href="contact.html" target="_blank"><i class="fa-regular fa-envelope fa-fw"></i><span class="link__text">CONTACT</span></a></li>
+                <li><a href="transition-temp.html" target="_blank"><i class="fa-duotone fa-user-astronaut fa-fw"></i><span class="link__text">CLIENT PORTAL</span></a></li>
+            </ul>
+        </nav>
+        <ul class="sidenav_socialiconlist menu ">
+            <li class="social_icons"><a href="https://www.instagram.com/ColorInCodedev/" target="_blank"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
+            <li class="social_icons"><a href="https://www.twitter.com/ColorInCodeco" target="_blank"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
+            <li class="social_icons"><a href="https://github.com/ColorInCodeMe" target="_blank"><i class="fa-brands fa-github fa-fw"></i></a></li>
+        </ul>
+    </section>
+    <!--end site nav-->
+
+    
+    <div class="reveal">
+        <div class="slides">
+            <!--start portfolio grid section-->
+            <section class="portfoliopagegrid__wrapper">
+                <div class="honeycomb">
+
+                  <div class="row even-row">
+                      <div class="cell">
+                        <div class="cell-inner"><a class="content cell-1" href="#"><span class="span-innertext">Cell 1</span></a></div>
+                      </div>
+                      <div class="cell">
+                        <div class="cell-inner"><a class="content cell-2" href="#"><span class="span-innertext">Cell 2</span></a></div>
+                      </div>
+                      <div class="cell">
+                        <div class="cell-inner"><a class="content cell-3" href="#"><span class="span-innertext">Cell 3</span></a></div>
+                      </div>
+                      <div class="cell">
+                        <div class="cell-inner"><a class="content cell-4" href="#"><span class="span-innertext">Cell 4</span></a></div>
+                      </div>
+                      <div class="cell">
+                        <div class="cell-inner"><a class="content cell-5" href="#"><span class="span-innertext">Cell 5</span></a></div>
+                      </div>
+                      <div class="cell">
+                        <div class="cell-inner"><a class="content cell-6" href="#"><span class="span-innertext">Cell 6</span></a></div>
+                      </div>
+                  </div>
+
+                  <div class="row odd-row">
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-7" href="#"><span class="span-innertext">Cell 7</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-8" href="#"><span class="span-innertext">Cell 8</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-9" href="#"><span class="span-innertext">Cell 9</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-10" href="#"><span class="span-innertext">Cell 10</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-11" href="#"><span class="span-innertext">Cell 11</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-12" href="#"><span class="span-innertext">Cell 12</span></a></div>
+                    </div>
+                  </div>
+
+                  <div class="row even-row">
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-13" href="#"><span class="span-innertext">Cell 13</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-14" href="#"><span class="span-innertext">Cell 14</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-15" href="#"><span class="span-innertext">Cell 15</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-16" href="#"><span class="span-innertext">Cell 16</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-17" href="#"><span class="span-innertext">Cell 17</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-18" href="#"><span class="span-innertext">Cell 18</span></a></div>
+                    </div>
+                  </div>
+                  <div class="row odd-row">
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-19" href="#"><span class="span-innertext">Cell 19</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-20" href="#"><span class="span-innertext">Cell 20</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-21" href="#"><span class="span-innertext">Cell 21</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-22" href="#"><span class="span-innertext">Cell 22</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-23" href="#"><span class="span-innertext">Cell 23</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-24" href="#"><span class="span-innertext">Cell 24</span></a></div>
+                    </div>
+                  </div>
+                  <!-- <div class="row">
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-25" href="#"><span class="span-innertext">Cell 25</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-26" href="#"><span class="span-innertext">Cell 26</span></a></div>
+                    </div>
+                    <div class="cell">
+                      <div class="cell-inner"><a class="content cell-27" href="#"><span class="span-innertext">Cell 27</span></a></div>
+                    </div> -->
+                   
+                  </div>
+            </section>
+            <!--end portfolio grid section-->
+
+          </section>
+
+        </section>
+        <section data-background="#ff0000" data-background="./assets/hexagon-donuts.png">
+          <h2>data-background: #ff0000</h2>
+      </section>
+        <section>
+            <section data-background="#ff0000" data-background="./assets/hexagon-donuts.png">
+                <h2>data-background: #ff0000</h2>
+            </section>
+            <section data-background="rgba(0, 0, 0, 0.2)">
+                <h2>data-background: rgba(0, 0, 0, 0.2)</h2>
+            </section>
+            <section data-background="salmon">
+                <h2>data-background: salmon</h2>
+            </section>
+        </section>
+<!-- 
+        <section data-name="Menu item two" data-background="rgba(0, 100, 100, 0.2)">
+            <section>
+                <h2>Background applied to stack</h2>
+            </section>
+            <section>
+                <h2>Background applied to stack</h2>
+            </section>
+            <section data-background="rgb(66, 66, 66)">
+                <h2>Background applied to slide inside of stack</h2>
+            </section>
+        </section> -->
+
+        <section data-name="Menu item five" id="surftwo" data-background-transition="slide" data-background="https://colorincode.me/assets/vans-surf-pink.png">
+          <!-- <h2>Background image</h2> -->
+          <div class="hexagon__wrapper">
+              <div class="text-hexagon-stroke">
+                  <div class="text-hexagon text-hexagon-vans">
+                      <div class="text-hexagon-h1">Project:</div>
+                      <div class="text-hexagon-p">Vans Surf</div>
+                      <div class="text-hexagon-h1">Roles:</div>
+                      <div class="text-hexagon-p">Principle Developer</div>
+                      <div class="text-hexagon-h1">Lang/Lib:</div>
+                      <div class="text-hexagon-p">JS/CSS/HTML<br/>/Babel/JSON</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section data-name="Menu item six" id="susa" data-background-transition="slide" data-background="https://colorincode.me/assets/susa-ventures.png">
+          <!-- <h2>Background image</h2> -->
+          <div class="hexagon__wrapper">
+              <div class="text-hexagon-stroke">
+                  <div class="text-hexagon text-hexagon-susa">
+                      <div class="text-hexagon-h1">Project:</div>
+                      <div class="text-hexagon-p">Susa Ventures</div>
+                      <div class="text-hexagon-h1">Roles:</div>
+                      <div class="text-hexagon-p">Principle Developer</div>
+                      <div class="text-hexagon-h1">Lang/Lib:</div>
+                      <div class="text-hexagon-p">Typescript Refactor<br>React</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- <section>
+          <section data-background-transition="slide" data-background="assets/image1.png">
+              <h2>Background image</h2>
+          </section>
+          <section data-background-transition="slide" data-background="assets/image1.png">
+              <h2>Background image</h2>
+          </section>
+      </section> -->
+
+      <section data-background="assets/image2.png" data-background-size="100px" data-background-repeat="repeat" data-background-color="#111">
+          <h2>Background image</h2>
+          <pre>data-background-size="100px" data-background-repeat="repeat" data-background-color="#111"</pre>
+      </section>
+
+      <section data-background="#888888">
+          <h2>Same background twice (1/2)</h2>
+      </section>
+      <section data-background="#888888">
+          <h2>Same background twice (2/2)</h2>
+      </section>
+
+      <section data-name="Menu item 4" id="vans404" data-background-iframe="https://www.colorincode.me/assets/portfolio_pages/vans_404/vans-404.html" data-background-interactive data-preload>
+          <!-- <h2>Video background</h2> -->
+          <div class="hexagon__wrapper">
+              <div class="text-hexagon-stroke text-hexagon-stroke-vans-404">
+                  <div class="text-hexagon text-hexagon-vans-404">
+                      <div class="text-hexagon-h1 text-hexagon-h1-vans-404">Project:</div>
+                      <div class="text-hexagon-p text-hexagon-p-vans-404">Vans 404 Page</div>
+                      <div class="text-hexagon-h1 text-hexagon-h1-vans-404">Roles:</div>
+                      <div class="text-hexagon-p text-hexagon-p-vans-404">Principle Developer<br>Video Editor</div>
+                      <div class="text-hexagon-h1 text-hexagon-h1-vans-404">Lang/Lib:</div>
+                      <div class="text-hexagon-p text-hexagon-p-vans-404">JS/CSS/HTML</div>
+                  </div>
+              </div>
+          </div>
+          
+      </section>
+
+      <section data-name="Menu item two" id="surf" data-background-iframe="https://colorincode.me/assets/portfolio_pages/vans_surf/vans-surf.html" data-background-interactive data-preload>
+          <div class="hexagon__wrapper">
+              <div class="text-hexagon-stroke text-hexagon-stroke-vans-404">
+                  <div class="text-hexagon text-hexagon-vans-404">
+                      <div class="text-hexagon-h1 text-hexagon-h1-vans-404">Project:</div>
+                      <div class="text-hexagon-p text-hexagon-p-vans-404">Vans Surf</div>
+                      <div class="text-hexagon-h1 text-hexagon-h1-vans-404">Roles:</div>
+                      <div class="text-hexagon-p text-hexagon-p-vans-404">Principle Developer<br>Animator</div>
+                      <div class="text-hexagon-h1 text-hexagon-h1-vans-404">Lang/Lib:</div>
+                      <div class="text-hexagon-p text-hexagon-p-vans-404">JS/CSS/HTML</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section data-name="Menu item 3" id="bowie" data-background-iframe="https://colorincode.me/assets/portfolio_pages/bowie/index.html">
+          <div class="hexagon__wrapper">
+              <div class="text-hexagon-stroke text-hexagon-stroke-bowie">
+                  <div class="text-hexagon text-hexagon-bowie">
+                      <div class="text-hexagon-h1 text-hexagon-h1-bowie">Project:</div>
+                      <div class="text-hexagon-p text-hexagon-p-bowie">Vans Bowie</div>
+                      <div class="text-hexagon-h1 text-hexagon-h1-bowie">Roles:</div>
+                      <div class="text-hexagon-p text-hexagon-p-bowie">Principle Developer<br>Editor<br>Animator</div>
+                      <div class="text-hexagon-h1 text-hexagon-h1-bowie">Lang/Lib:</div>
+                      <div class="text-hexagon-p text-hexagon-p-bowie">JS/CSS/HTML</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section data-name="Menu item 4" id="harrypotter" data-background-iframe=" https://colorincode.me/assets/portfolio_pages/vans_hp/hp-projectpage.html" data-background-interactive data-preload>
+        <div class="hexagon__wrapper">
+            <div class="text-hexagon-stroke text-hexagon-stroke-bowie" style="background-color: black;">
+                <div class="text-hexagon text-hexagon-bowie">
+                    <div class="text-hexagon-h1 text-hexagon-h1-bowie">Project:</div>
+                    <div class="text-hexagon-p text-hexagon-p-bowie">Harry Potter x Vans</div>
+                    <div class="text-hexagon-h1 text-hexagon-h1-bowie">Roles:</div>
+                    <div class="text-hexagon-p text-hexagon-p-bowie">Principle Developer<br>Editor<br>Animator</div>
+                    <div class="text-hexagon-h1 text-hexagon-h1-bowie">Lang/Lib:</div>
+                    <div class="text-hexagon-p text-hexagon-p-bowie">JS/CSS/HTML</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- <section>
+          <section data-background="#417203">
+              <h2>Same background twice vertical (1/2)</h2>
+          </section>
+          <section data-background="#417203">
+              <h2>Same background twice vertical (2/2)</h2>
+          </section>
+      </section>
+
+      <section data-background="#934f4d">
+          <h2>Same background from horizontal to vertical (1/3)</h2>
+      </section>
+      <section>
+          <section data-background="#934f4d">
+              <h2>Same background from horizontal to vertical (2/3)</h2>
+          </section>
+          <section data-background="#934f4d">
+              <h2>Same background from horizontal to vertical (3/3)</h2>
+          </section>
+      </section> -->
+
+  </div>
+
+</div>
+<script src="https://kit.fontawesome.com/e56bb8c3d5.js" crossorigin="anonymous"></script>
+<script type="module" src="./ts/app.ts"></script>
+</body>
+</html>

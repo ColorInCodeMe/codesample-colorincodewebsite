@@ -1,0 +1,21 @@
+//partials
+@forward './_nav.scss';
+@forward './_animations.scss';
+@forward './_mixins.scss';
+@forward './_colors.scss';
+@forward './_variables.scss';
+// @forward '../assets/fontawesome-pro-6.4.2/scss/fontawesome.scss';
+@forward './fonts.scss';
+@forward './utils';
+
+@forward './_mediaqueries.scss';
+
+// not roping in individual pages for now
+
+// @forward './home.scss';
+// @forward './about.scss';
+
+// scripts and loaders
+@forward './_scripts.scss';
+// @forward './loaders.scss';
+@forward './splide.module.scss';

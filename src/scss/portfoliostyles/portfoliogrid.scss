@@ -1,0 +1,210 @@
+$cell_width: 133px;
+$cell_spacing: 11px;
+// $v_offset: 0.32*$cell_width - 0.5*$cell_spacing;
+// $h_offset: 0.25*$cell_width + 0.25*$cell_spacing;
+$v_offset: calc(0.32 * #{$cell_width} - 0.5 * #{$cell_spacing} * -1);
+$h_offset: calc(0.25 * #{$cell_width} + 0.25 * #{$cell_spacing} * -1);
+
+
+$honeycombSide: 150px; // Side length of the hexagon
+
+.row 
+{ 
+  display: flex;
+  flex-direction: row;
+  
+}
+.odd-row {
+  display: flex;
+  flex-direction: row;
+  margin-left: calc($honeycombSide / 2); // Offset the odd rows
+  transform: translateY(-44px);
+}
+.even-row {
+  display: flex;
+  flex-direction: row;
+  margin-right: calc($honeycombSide / 2); // Offset the odd rows
+}
+
+.honeycomb {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
+  perspective: 1000px; // For the 3D effect
+
+  .cell {
+    position: relative;
+    width: 2 * $honeycombSide;
+    height: 1.732 * $honeycombSide; // Approximate hexagon height
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: $honeycombSide solid transparent;
+      border-right: $honeycombSide solid transparent;
+
+      // &.up {
+      //   border-bottom: 1.732 * $honeycombSide solid #ffc107; // Downward facing hexagon
+      // }
+
+      // &.down {
+      //   border-top: 1.732 * $honeycombSide solid #ffc107; // Upward facing hexagon
+      // }
+    }
+  }
+}
+
+.honeycomb-mobile {
+  display: flex;
+  // flex-wrap: wrap;
+  // max-width: 50%;
+  width:100vw;
+  margin: 0 auto;
+  perspective: 1000px; // For the 3D effect
+transition: all 0.5s ease-in-out;
+  .cell {
+    position: relative;
+    width: 2 * $honeycombSide;
+    height: 1.732 * $honeycombSide; // Approximate hexagon height
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: $honeycombSide solid transparent;
+      border-right: $honeycombSide solid transparent;
+
+      // &.up {
+      //   border-bottom: 1.732 * $honeycombSide solid #ffc107; // Downward facing hexagon
+      // }
+
+      // &.down {
+      //   border-top: 1.732 * $honeycombSide solid #ffc107; // Upward facing hexagon
+      // }
+    }
+  }
+}
+
+// .portfoliopagegrid__wrapper {
+//     display: grid;
+//     place-content: center;
+//     // grid-gap: 20px;
+//     // grid-template-columns: repeat(4, 1fr);
+//     // grid-template-rows: 1fr 1fr 1fr;
+//     // grid-auto-rows: auto;
+//     width: 100%;
+//     height: 100%;
+//     min-height: 60vh;
+//     border:2px dotted aliceblue;
+//     position: relative;
+// }
+.honeycomb {
+  margin: 0 auto;
+  background: linear-gradient(#ffc, #fca);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // width: 100%;
+  // max-width: 1800px;
+  padding: 20px 45px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  // overflow: hidden;
+  position: relative;
+  font-size: 12px;
+  // &, *, *:before, *:after {
+  //   box-sizing: border-box;
+  // }
+   
+  .cell {
+    position: relative;
+    display: block;
+    // vertical-align: center;
+    width: $cell_width;
+    // height: 1.5*$cell_width;
+    // margin: -1*$v_offset $cell_spacing/2 -1*$v_offset $cell_spacing/2;
+
+    height: calc(1.5 * #{$cell_width});
+    margin: calc(-1 * #{$v_offset}) calc(#{$cell_spacing} / 2) calc(-1 * #{$v_offset}) calc(#{$cell_spacing} / 2);
+
+    text-decoration: none;
+    overflow: hidden;
+    transform: rotate(-180deg);
+    left: calc(-1 * #{$h_offset});
+    &.odd-row {
+      left: calc(#{$h_offset});
+    }
+    
+    .cell-inner {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      transform: rotate(60deg);
+      .content {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transform: rotate(60deg);
+        background-color: #FFCC00;
+        color: #444;
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(2n) {
+      .cell-inner .content {
+        background-color: #FFAA00;
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+    // span {
+    //   position: absolute;
+    //   text-align: center;
+    //   width: 100px;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    // }
+  }
+}
+
+.span-innertext {
+  transform: rotate(0deg);
+}
+// non-structural CSS to demonstrate background
+.honeycomb .cell {
+  .content.cell-7 {
+    background-image: url('https://pbs.twimg.com/profile_images/498860581072273408/q5v6iWVw_400x400.jpeg');
+    background-size: contain;
+    background-position: center center;
+    &:hover {
+      background-image: none;
+    }
+  }
+}
+
+// // non-structural code to make fonts and transitions look good
+// body {
+// //   font-family: arial, helvetica, sans-serif;
+// //   font-weight: bold;
+// //   text-transform: uppercase;
+//  font-size: 12px;
+//   &, *, *:before, *.after {
+//     box-sizing: border-box;
+//     transition: all 0.1s ease;
+//   }
+// }

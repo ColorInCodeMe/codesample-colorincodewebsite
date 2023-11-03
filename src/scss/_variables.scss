@@ -1,0 +1,17 @@
+$devBorder: 2px dotted purple;
+:root {
+    --dark-color: hsla(var(--hue), 100%, 9%);
+    --light-color: hsla(var(--hue), 95%, 98%);
+    --base: hsla(var(--hue), 95%, 50%);
+    --complimentary1: hsla(var(--hue-complimentary1), 95%, 50%);
+    --complimentary2: hsla(var(--hue-complimentary2), 95%, 50%);
+    --bg-gradient: linear-gradient( to bottom, hsl(var(--hue), 95%, 99%), hsl(var(--hue), 95%, 84%));
+    --opaque1: hsla(var(--hue-opaque1), 95%, 50%);
+    --opaque2: hsla(var(--hue-opaque2), 95%, 50%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

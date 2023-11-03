@@ -1,0 +1,174 @@
+/*globals*/
+// html {
+//     overflow: hidden;
+// }
+
+html.js {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+html.js.wf-active,
+html.js.wf-inactive,
+html.js.ready {
+    opacity: 1;
+}
+
+// body>svg {
+//     display: none;
+// }
+// input,
+// button,
+// textarea,
+// select {
+//     font: inherit;
+// }
+
+/*START BARBA*/
+
+// .main {
+//     width: 70%;
+//     max-width: 60rem;
+//     margin: 0 auto;
+//     padding-top: 1rem;
+// }
+
+// .main__contactus--temp {
+//     width: 70%;
+//     max-width: 60rem;
+//     margin: 0 auto;
+//     padding-top: 1rem;
+//     align-content: baseline;
+//     display: flex;
+//     align-items: flex-start;
+//     flex-direction: column;
+// }
+
+// .main>* {
+//     will-change: transform;
+// }
+
+// .icon {
+//     fill: inherit;
+// }
+
+// [data-barba='wrapper'] {
+//     position: relative;
+// }
+
+// [data-barba='container'] {
+//     will-change: transform;
+// }
+
+// .is-animating>[data-barba='container'] {
+//     position: absolute;
+//     width: 100%;
+// }
+
+// [data-barba='wrapper'] {
+//     position: relative;
+// }
+
+// [data-barba='container'] {
+//     will-change: transform;
+//     .is-animating>& {
+//         position: absolute;
+//         width: 100%;
+//     }
+// }
+
+// .site,
+// [class*='site--'] {
+//     position: relative;
+//     height: 100vh;
+//     padding: 1rem;
+// }
+
+// [class*='site--'][class*='--pink'] {
+//     color: #EC43DD;
+//     background-color: rgba(236, 67, 221, 0.3);
+// }
+
+// [class*='site--'][class*='--blue'] {
+//     color: #3665EA;
+//     background-color: rgba(54, 101, 234, 0.3);
+// }
+
+// [class*='site--'][class*='--green'] {
+//     color: #60F6A8;
+//     background-color: rgba(96, 246, 168, 0.3);
+// }
+
+// .picture,
+// [class*='picture--'] {
+//     height: 40vh;
+//     background-color: #394042;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: auto 30%;
+//     border-radius: .4rem;
+// }
+
+// [class*='--pink'] .picture,
+// [class*='picture--'][class*='--pink'] {
+//     background-color: #EC43DD;
+// }
+
+// [class*='--blue'] .picture,
+// [class*='picture--'][class*='--blue'] {
+//     background-color: #3665EA;
+// }
+
+// [class*='--green'] .picture,
+// [class*='picture--'][class*='--green'] {
+//     background-color: #60F6A8;
+// }
+
+
+/* this may be leftover scripting, i think this was previously the arrows/built in navigation for barba and not our site nav*/
+
+// .nav {
+//     display: -ms-flexbox;
+//     display: flex;
+//     -ms-flex-pack: justify;
+//     justify-content: space-between;
+//     padding: 1rem;
+// }
+
+// .nav__link {
+//     display: block;
+//     width: 3vw;
+//     min-width: 1.6rem;
+//     transition: fill .35s ease-in-out;
+//     fill: #000;
+// }
+
+// .nav__link:hover {
+//     fill: #3665EA;
+// }
+
+// .nav__link svg {
+//     width: 100%;
+// }
+
+
+/*END BARBA*/
+
+
+/*pixi */
+
+.orb-canvas {
+    // background: linear-gradient(40deg, rgba(230, 230, 230, 0.23863797227875527) 0%, rgba(201, 201, 201, 0.5) 15%, rgba(255, 255, 255, 0.15) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.pricinglist--isanimating {
+    -webkit-animation: text-pop-down-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-down-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
